@@ -1,0 +1,213 @@
+body {
+    width: 1440px;
+    background-color: #FAFAFA;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: inter, sans-serif;
+    font-weight: 700;
+    color: #2E363E;
+}
+
+p {
+    color: #434B53;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+.conteiner {
+    width: 1180px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+.header {
+    padding: 50px 0;
+    margin-bottom: 80px;
+}
+
+.header-nav {}
+
+.header-link-logo {
+    color: #5F0A61;
+    font-size: 25px;
+}
+
+.header-list {}
+
+.header-item {}
+
+.header-link-nav {
+    color: #2E363E;
+    font-size: 18px;
+}
+
+.header-link-nav:hover {
+    color: #ad0db0;
+}
+
+.header-link {
+    color: #5F0A61;
+    font-size: 18px;
+}
+
+.header-link:hover {
+    color: #ad0db0;
+}
+
+.conteiner-hero {
+    display: flex;
+    align-items: center;
+    margin-bottom: 91px;
+}
+
+.hero-titel {
+    padding-bottom: 25px;
+}
+
+.text {
+    padding-bottom: 25px;
+}
+
+.hero-btn {
+    width: 337px;
+    height: 70px;
+    background-color: #5F0A61;
+    color: #FAFAFA;
+    border-radius: 5px;
+}
+
+.hero-img {}
+
+.features {
+   background-color: #fdf8f8; 
+}
+
+.conteiner-features {
+    padding: 130px;
+}
+
+.features-title {
+    text-align: center;
+    padding-bottom: 69px;
+}
+
+.features-list {
+    display: flex;
+    gap: 42px;
+}
+
+.features-item {}
+
+.features-subtitle {}
+
+.features-text {}
+
+.connect {}
+
+.connect-img {}
+
+.connect-title {}
+
+.connect-text {}
+
+.connect-list {}
+
+.connect-item {}
+
+.connect-subtitle {}
+
+.connect-text-li {}
+
+.reviews {
+    background-color: #fdf8f8;
+}
+
+.reviews-title {}
+
+.reviews-subtitle {}
+
+.reviews-link {}
+
+.review-img {}
+
+.review-subtext {}
+
+.tariff {}
+
+.title {}
+
+.tariff-list {}
+
+.tariff-item {}
+
+.tariff-subtitle {}
+
+.tariff-subtitle-four {}
+
+.tariff-text {}
+
+.tariff-link {}
+
+.request {}
+
+.request-title {}
+
+.request-text {}
+
+.request-input {}
+
+.request-btn {}
+
+.footer {
+    background-color: #5F0A61;
+}
+
+.footer-link-logo {}
+
+.footer-list {}
+
+.footer-item {}
+
+.footer-link {}
+
+/*-------------------tariffs------------------*/
+
+.offers {}
+
+.offers-title {}
+
+.offers-list {}
+
+.offers-item {}
+
+.offers-img {}
+
+.subtitlte {}
+
+.offers-subtitle-four {}
+
+.offers-text {}
+
+.offers-link {}
