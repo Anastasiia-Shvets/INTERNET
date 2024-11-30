@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 1440px;
     background-color: #FAFAFA;
@@ -9,7 +13,7 @@ h3,
 h4 {
     font-family: inter, sans-serif;
     font-weight: 700;
-    color: #2E363E;
+    color: #2e363e;
     margin: 0;
 }
 
@@ -30,6 +34,7 @@ ul {
 a {
     text-decoration: none;
     font-style: normal;
+    display: inline-block;
 }
 
 button {
@@ -44,16 +49,32 @@ img {
     width: 1180px;
     margin: 0 auto;
     padding: 175px 130px;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+}
+
+
+/* ============================HEADER=============================== */
 
 .header {}
 
 .conteiner-header {
     padding: 50px 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 239px;
 }
 
 .header-nav {
@@ -63,17 +84,18 @@ img {
 }
 
 .header-link-logo {
-    color: #5F0A61;
     font-size: 25px;
-}
-
-.header-link-logo:hover {
-    color: #ef03f3;
+    line-height: 1.50;
+    letter-spacing: normal;
+    color: #5F0A61;
+    font-weight: 500;
+    outline: transparent;
 }
 
 .header-list {
     display: flex;
     gap: 40px;
+    width: 562px;
 }
 
 .header-item {}
@@ -81,9 +103,15 @@ img {
 .header-link-nav {
     color: #2E363E;
     font-size: 18px;
+    line-height: 1.50;
+    letter-spacing: normal;
+    font-weight: 500;
+    outline: transparent;
 }
 
-.header-link-nav:hover {
+.header-link-nav:hover,
+.header-link-nav:focus,
+.header-link-nav:active {
     color: #ef03f3;
 }
 
@@ -93,9 +121,15 @@ img {
     font-weight: 700;
 }
 
-.header-link:hover {
+.header-link:hover,
+.header-link:focus {
     color: #ef03f3;
 }
+
+/* ============================================================== */
+
+
+/* ===============================HERO=================================== */
 
 .conteiner-hero {
     display: flex;
@@ -139,6 +173,10 @@ img {
 
 .hero-img {}
 
+/* ============================================================= */
+
+/* ==============================FEATURES=================================== */
+
 .features {
     background-color: #f7f2f2;
 }
@@ -148,8 +186,11 @@ img {
 }
 
 .features-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: normal;
     text-align: center;
-    padding-bottom: 69px;
+    margin-bottom: 69px;
 }
 
 .features-list {
@@ -162,11 +203,23 @@ img {
 }
 
 .features-subtitle {
+    font-size: 22px;
+    line-height: 1.43;
+    letter-spacing: normal;
     text-align: center;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 
-.features-text {}
+.features-text {
+    font-size: 18px;
+    line-height: 1.50;
+    letter-spacing: normal;
+}
+
+/* ======================================================== */
+
+
+/* ===========================CONNECT============================= */
 
 .connect {}
 
@@ -183,15 +236,15 @@ img {
 .connect-title {
     font-size: 36px;
     line-height: 1.30;
-    letter-spacing: -0.028em;
-    padding-bottom: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
 }
 
 .connect-text {
     font-size: 21px;
     line-height: 1.43;
-    letter-spacing: -0.00095em;;
-    padding-bottom: 28px;
+    letter-spacing: -0.00952em;
+    margin-bottom: 28px;
 }
 
 .connect-list {
@@ -205,84 +258,110 @@ img {
 
 .connect-subtitle {
     font-size: 30px;
-    font-weight: 700;
     line-height: 1.33;
     letter-spacing: normal;
     color: #5F0A61;
+    margin-bottom: 6px;
 }
 
 .connect-text-li {
     font-size: 14px;
     line-height: 1.5;
-    letter-spacing: normal;
+    letter-spacing: 0em;
     color: #2E363E;
 }
+
+/* ==================================================== */
+
+
+/* =========================REVIEWS=============================== */
 
 .reviews {
     background-color: #f7f2f2;
 }
 
 .conteiner-reviews {
-    padding: 175px 130px;
+    padding: 0;
+}
+
+.reviews-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.div-double {
+    display: flex;
+    gap: 51px;
+    padding: 118px 170px;
+    border: 1px solid #5F0A61;
+    border-radius: 10px;
 }
 
 .reviews-div {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    width: 536px;
-    height: 404px;
+    padding-right: 35px;
 }
 
-.reviews-div-two {
-    display: flex;
-        flex-direction: column;
-}
-
-.reviews-title {
-    font-size: 36px;
-    padding-bottom: 60px;
-    text-align: center;
-}
 
 .reviews-subtitle {
     font-size: 30px;
     font-weight: 500;
-    line-height: 1.43em;
-    letter-spacing: normal;
+    line-height: 1.43;
+    letter-spacing: 0em;
+    margin-bottom: 24px;
 }
 
 .reviews-text {
     font-size: 15px;
+    line-height: 1.70;
+    letter-spacing: 0em;
+    margin-bottom: 24px;
 }
 
 .reviews-link {
     font-size: 17px;
     text-decoration: underline;
     color: #5F0A61;
+    display: inline-block;
+    padding: 20px 20px 20px 0;
 }
 
 .reviews-link:hover {
     color: #ef03f3;
 }
 
+.reviews-div-two {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .reviews-img {
-    padding-bottom: 21px;
+    margin-bottom: 21px;
 }
 
 .reviews-subtitle-four {
     font-size: 21px;
     font-weight: 500;
-    line-height: 1.43em;
+    line-height: 1.43;
     letter-spacing: normal;
 }
 
 .reviews-subtext {
     font-size: 16px;
-    line-height: 1.70em;
+    line-height: 1.70;
     letter-spacing: normal;
     color: #A6AEB6;
 }
+
+/* =================================================== */
+
+
+/* ======================TARIFF============================== */
 
 .tariff {}
 
@@ -294,7 +373,7 @@ img {
 .tariff-title {
     padding-bottom: 60px;
     font-size: 36px;
-    line-height: 1.33em;
+    line-height: 1.33;
     letter-spacing: normal;
     text-align: center;
 }
@@ -327,7 +406,6 @@ img {
 
 .tariff-subtitle {
     font-size: 27px;
-    font-weight: 700;
     line-height: 1.10;
     letter-spacing: normal;
 }
@@ -340,52 +418,59 @@ img {
     letter-spacing: normal;
 }
 
-.tariff-text {}
+.tariff-text {
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: normal;
+}
 
 .mbit {
     color: #2E363E;
     font-size: 18px;
-    line-height: 1.10em;
+    line-height: 1.10;
     letter-spacing: normal;
     font-weight: 600;
 }
 
 .tariff-link {
+    font-size: 17px;
+    line-height: 1.10;
+    letter-spacing: normal;
     text-decoration: underline;
     color: #5F0A61;
-    margin-left: 200px;
+    margin-left: 195px;
 }
 
-.tariff-link:hover {
+.tariff-link:hover,
+.tariff-link:focus {
     color: #ef03f3;
 }
 
+/* ================================================ */
+
+
+/* ======================REQUEST=========================== */
 .request {
     background-color: #f7f2f2;
 }
 
 .conteiner-request {
     padding: 175px 0;
+    text-align: center;
 }
 
 .request-title {
     font-size: 36px;
     line-height: 1.30;
     letter-spacing: normal;
-    text-align: center;
     margin-bottom: 26px;
 }
 
 .request-text {
     font-size: 21px;
     line-height: 1.43;
-    letter-spacing: -0.02em;
-    text-align: center;
+    letter-spacing: -0.00952em;
     padding-bottom: 50px;
-}
-
-.request-div {
-    text-align: center;
 }
 
 .request-input {
@@ -399,10 +484,17 @@ img {
     border: 1px solid #BFBFBF;
 }
 
+.request-input:hover,
+.request-input:focus,
+.request-input:active {
+    border-color: #ef03f3;
+}
+
 .request-btn {
     width: 280px;
     height: 70px;
     border-radius: 5px;
+    font-weight: 600;
     font-size: 18px;
     line-height: 1.10;
     letter-spacing: normal;
@@ -410,6 +502,16 @@ img {
     background-color: #5F0A61;
     color: #FFFFFF;
 }
+
+.request-btn:hover,
+.request-btn:focus {
+    background-color: #ef03f3;
+    border-color: #ef03f3
+}
+
+/* =============================================== */
+
+/* ======================FOOTER=========================== */
 
 .footer {
     background-color: #5F0A61;
@@ -430,7 +532,8 @@ img {
     color: #FFFFFF;
 }
 
-.footer-link-logo:hover {
+.footer-link-logo:hover,
+.footer-link-logo:focus {
     color: #e684e8;
 }
 
@@ -451,26 +554,91 @@ img {
     letter-spacing: normal;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
     color: #e684e8;
 }
 
-/*-------------------tariffs------------------*/
+/*=======================PAGE TARIFF===========================*/
+
 
 .offers {}
 
-.offers-title {}
+.conteiner-offers {
+    padding: 79px;
+    margin: 0 130px;
+}
+
+.offers-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: normal;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.offers-div {
+
+}
 
 .offers-list {}
 
-.offers-item {}
+.offers-item {
+    display: flex;
+    gap: 40px;
+    padding: 80px 40px;
+}
 
 .offers-img {}
 
-.subtitlte {}
+.offers-div-li {
 
-.offers-subtitle-four {}
+}
 
-.offers-text {}
+.offers-subtitle-div {
+    display: flex;
+    gap: 97px;
+}
 
-.offers-link {}
+.subtitlte {
+    font-size: 27px;
+    line-height: 1.10;
+    letter-spacing: normal;
+    margin-bottom: 13px;
+}
+
+.offers-subtitle-four {
+    font-size: 24px;
+    line-height: 1.10;
+    letter-spacing: normal;
+    font-weight: 600;
+    color: #434B53;
+}
+
+.subtext {
+    font-size: 16px;
+    line-height: 1.10;
+    letter-spacing: normal;
+    margin-bottom: 13px;
+}
+
+.offers-text {
+    font-size: 16px;
+    line-height: 1.40;
+    letter-spacing: normal;
+    margin-bottom: 15px;
+}
+
+.offers-link {
+    margin-left: 412px;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 1.10;
+    letter-spacing: normal;
+    text-decoration: underline;
+}
+
+.offers-link:hover,
+.offers-link:focus {
+    color: #ef03f3;
+}
