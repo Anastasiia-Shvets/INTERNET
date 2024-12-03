@@ -107,6 +107,7 @@ img {
     letter-spacing: normal;
     font-weight: 500;
     outline: transparent;
+    padding: 5px;
 }
 
 .header-link-nav:hover,
@@ -438,7 +439,8 @@ img {
     letter-spacing: normal;
     text-decoration: underline;
     color: #5F0A61;
-    margin-left: 195px;
+    margin-left: 175px;
+    padding: 10px;
 }
 
 .tariff-link:hover,
